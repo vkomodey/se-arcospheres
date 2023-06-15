@@ -22,3 +22,15 @@ class Arcobundle:
                 return False
 
         return True
+
+    def replace(self, symbol_from: Arcosymbol, symbol_to: Arcosymbol):
+        idx = self.symbols.index(symbol_from)
+        new_list = self.symbols[:idx]
+        new_list.append(symbol_to)
+        new_list.extend(self.symbols[idx+1:])
+
+        return Arcobundle(new_list)
+
+    def __repr__(self):
+        return str(self.symbols)
+
