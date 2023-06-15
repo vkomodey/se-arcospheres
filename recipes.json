@@ -1,0 +1,14 @@
+{
+  "naq_tesseract": {
+    "recipes": [
+      {
+        "input": ["lambda", "ksi", "zeta"],
+        "output": ["theta", "epsilon", "phi"]
+      },
+      {
+        "input": ["lambda", "ksi", "zeta"],
+        "output": ["phi", "gamma", "omega"]
+      }
+    ]
+  }
+}

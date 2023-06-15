@@ -1,0 +1,42 @@
+[
+  {
+    "input": ["zeta", "theta", "gamma", "omega"],
+    "output": ["lambda", "ksi", "epsilon", "phi"]
+  },
+  {
+    "input": ["lambda", "ksi", "epsilon", "phi"],
+    "output": ["zeta", "theta", "gamma", "omega"]
+  },
+  {
+    "input": ["lambda", "omega"],
+    "output": ["ksi", "theta"]
+  },
+  {
+    "input": ["ksi", "gamma"],
+    "output": ["zeta", "lambda"]
+  },
+  {
+    "input": ["ksi", "zeta"],
+    "output": ["theta", "phi"]
+  },
+  {
+    "input": ["lambda", "theta"],
+    "output": ["epsilon", "zeta"]
+  },
+  {
+    "input": ["theta", "epsilon"],
+    "output": ["phi", "omega"]
+  },
+  {
+    "input": ["zeta", "phi"],
+    "output": ["gamma", "epsilon"]
+  },
+  {
+    "input": ["phi", "gamma"],
+    "output": ["omega", "ksi"]
+  },
+  {
+    "input": ["epsilon", "omega"],
+    "output": ["lambda", "gamma"]
+  }
+]
