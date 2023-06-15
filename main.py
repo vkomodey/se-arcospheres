@@ -1,9 +1,11 @@
 from arcobundle import Arcobundle
 from arcosymbol import Arcosymbol
+from inversions import Inversion
 
-s1 = [ Arcosymbol.KSI, Arcosymbol.LAMBDA, Arcosymbol.LAMBDA, Arcosymbol.KSI]
-s2 = [Arcosymbol.LAMBDA, Arcosymbol.KSI, Arcosymbol.LAMBDA, Arcosymbol.EPSILON]
+bundle = Arcobundle([Arcosymbol.KSI, Arcosymbol.LAMBDA, Arcosymbol.GAMMA, Arcosymbol.EPSILON])
 
-a1 = Arcobundle(s1)
-a2 = Arcobundle(s2)
-print(a1 == a2)
+inv_input = Arcobundle([Arcosymbol.KSI, Arcosymbol.LAMBDA, Arcosymbol.GAMMA, Arcosymbol.EPSILON])
+inv_output = Arcobundle([Arcosymbol.PHI, Arcosymbol.ZETA, Arcosymbol.THETA, Arcosymbol.OMEGA])
+inversion = Inversion(inv_input, inv_output)
+
+print(inversion.is_applicable(bundle))

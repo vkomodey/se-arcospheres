@@ -11,11 +11,14 @@ class Arcosymbol(IntEnum):
     PHI = auto()
     OMEGA = auto()
 
+
 def clean_symbols_map():
     result = {}
     for symbol in Arcosymbol:
         result[symbol] = 0
     return result
+
+
 def to_symbol(s: str) -> Arcosymbol:
     match s:
         case "lambda":
