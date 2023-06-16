@@ -1,7 +1,4 @@
-import json
 from arcobundle import Arcobundle
-
-raw_inversions = json.load(open("./inversions.json"))
 
 
 class Inversion:
